@@ -1,0 +1,27 @@
+.gallery {
+  width: 1400px;
+}
+
+.gallery__img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery__item {
+  display: flex;
+  list-style: none;
+}
+
+.grid {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.grid__item {
+  flex-basis: calc ((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: 30px;
+  margin-top: 30px;
+  --grid-item: 3;
+}
